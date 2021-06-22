@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Detailing Selleslagh</title>
+
+    <link rel="stylesheet" href="css/fullpage/fullpage.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <script src="js/fullpage/fullpage.js" defer></script>
+    <script src="js/fullpage/fullpage.extensions.min.js" defer></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <ul id="navigation">
+            <li data-menuanchor="home-page" class="active"><a href="#home-page">Home</a></li>
+            <li data-menuanchor="about-page"><a href="#about-page">About</a></li>
+            <li data-menuanchor="gallery-page"><a href="#gallery-page">Gallery</a></li>
+            <li data-menuanchor="contact-page"><a href="#contact-page">Contact</a></li>
+        </ul>
+    </header>
+
+    <div id="fullpage">
+        <div id="jumbo" class="section">
+            <div class="container">
+                <img src="img/anim.gif" alt="Logo">
+                <h2>Car Detailing Selleslagh</h2>
+                <h3>CDS biedt u dé perfecte reiniging/behandeling voor uw wagen.</h3>
+            </div>
+            <div id="overlay">
+                <video src="img/kortvideo.mp4" loop muted autoplay></video>
+            </div>
+        </div>
+
+        <div id="about" class="section">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>Car Detailing Selleslagh is al meer dan 3 jaar gespecialiseerd in het opknappen en reinigen van wagens tot in de perfectie. Onze behandelingen zijn zowel voor het interieur als exterieur. Wij gaan steeds voor het uiterste en gaan geen enkele uitdaging uit de weg.</p>
+                <h2>Wie zijn we en wat doen we?</h2>
+                <p> Waskrassen in je lak? vervuild interieur of exterieur? geen zin of tijd om te kuisen?</p>
+                <p>Car Detailing Selleslagh is de oplossing! Wij bieden u tal van diensten aan die uw wagen zo goed als nieuw maakt. Neem gerust contact met ons op en wij helpen u met het vinden van de beste behandeling voor uw wagen.</p>
+            </div>
+        </div>
+
+        <div id="gallery" class="section">
+            <div class="slide"><img src="img/2.jpg" alt="image"></div>
+            <div class="slide"><img src="img/3.jpg" alt="image"></div>
+            <div class="slide"><img src="img/4.jpg" alt="image"></div>
+            <div class="slide"><img src="img/5.jpg" alt="image"></div>
+            <div class="slide"><img src="img/6.jpg" alt="image"></div>
+            <div class="slide"><img src="img/7.jpg" alt="image"></div>
+            <div class="slide"><img src="img/8.jpg" alt="image"></div>
+            <div class="slide"><img src="img/9.jpg" alt="image"></div>
+            <div class="slide"><img src="img/10.jpg" alt="image"></div>
+            <div class="slide"><img src="img/11.jpg" alt="image"></div>
+            <div class="slide"><img src="img/12.jpg" alt="image"></div>
+            <div class="slide"><img src="img/13.jpg" alt="image"></div>
+            <div class="slide"><img src="img/14.jpg" alt="image"></div>
+
+        </div>
+
+        <div class="section">
+            <div class="slide"><video src="img/gip_video.mp4" autoplay muted controls></video></div>
+            <div class="slide"><video src="img/samengevoegd.mp4" autoplay muted controls></video></div>
+        </div>
+
+        <div id="services" class="section">
+            <form action="mailto:selleslag.arne@gmail.com">
+                <label for="name">Naam</label>
+                <input type="text" name="name" id="name">
+
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+
+                <label for="telnr">Telefoon</label>
+                <input type="tel" name="telnr" id="telnr">
+
+                <label for="questions">Vragen</label>
+                <textarea name="quest" id="questions" cols="30" rows="10"></textarea>
+
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener("load", function() {
+            new fullpage("#fullpage", {
+                anchors: ['home-page', 'about-page', 'gallery-page', 'video-page', 'contact-page'],
+                menu: "navigation",
+	            scrollHorizontally: true,
+                lazyLoading: true
+            });
+        });
+    </script>
+</body>
+</html>
