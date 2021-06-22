@@ -94,9 +94,10 @@ header {
     min-width: 100%;
 }
 
-#jumbo .container img {
+#jumbo img {
     margin-bottom: 15px;
-    width: 300px;
+    width: 70%;
+    max-width: 350px;
 }
 
 form {
